@@ -34,9 +34,9 @@
       </nav>
     </header>
     <main>
-      <h1>Барбершоп "Бородинский"</h1>
+      <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden.">Преимущества</h2>
         <ul>
           <li>
             <h3>БЫСТРО</h3>
@@ -100,7 +100,25 @@
         <h2>ЗАПИСАТЬСЯ</h2>
         <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ
           СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-          <!-- Добавить фориы -->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="appointment-date">Дата</label>
+            <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2019">
+          </p>
+          <p>
+            <label for="appointment-time">Время</label>
+            <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+          </p>
+          <p>
+            <label for="appointment-name">Ваше имя</label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+          </p>
+          <p>
+            <label for="appointment-phone">Телефон</label>
+            <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+          </p>
+          <button type="submit">Отпарвить</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -121,15 +139,37 @@
         <a href="https://htmlacademy.ru/">HTML Academy</a>
       </p>
     </footer>
-    <!-- Добавить форму входа -->
+
     <section>
       <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember">
+            Запомнить меня
+          </label>
+          <a href="#">Я забыл пароль</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
-    <!-- Добавить карту -->
+
     <section>
-      <h2>Как до нас добраться</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.png" width="780" height="560"
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
       <button type="button">Закрыть</button>
     </section>
   </body>

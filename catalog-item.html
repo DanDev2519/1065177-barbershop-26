@@ -19,7 +19,7 @@
 				<li><a href="">КОНТАКТЫ</a></li>
 			</ul>
 			<ul>
-				<li><button type="button">ВХОД</button></li>
+        <li><a href="login.html">вход</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -32,7 +32,7 @@
 			<li>Набор для путешествий «Baxter of California»</li>
 		</ul>
 		<section>
-			<h2>Изображения товара</h2>
+			<h2 class="visually-hidden">Изображения товара</h2>
 			<p>
 				<img src="img/product-big.jpg" width="460" height="498"
 				alt="Фото всего набора">
@@ -44,7 +44,7 @@
 			</ul>
 		</section>
 		<section>
-			<h2>Описание товара</h2>
+			<h2 class="visually-hidden">Описание товара</h2>
 			<p>есть в наличии</p>
 			<p>Артикул: dexter-ae</p>
 			<p>Travel Kit – необходимый аксессуар во время любого
@@ -87,11 +87,28 @@
     </p>
 	</footer>
 
-	<!-- Добавить форму входа -->
-	<section>
-		<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-		<p>Введите пожалуйста свой логин и пароль</p>
-		<button type="button">Закрыть</button>
-	</section>
+  <section>
+    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="remember">
+          Запомнить меня
+        </label>
+        <a href="#">Я забыл пароль</a>
+      </p>
+      <button type="submit">Войти</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 </html>
