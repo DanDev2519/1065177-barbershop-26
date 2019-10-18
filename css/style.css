@@ -20,7 +20,7 @@ body {
   color: #000000;
 
   background-color: #f9f6f3;
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -1037,7 +1037,7 @@ input[type="radio"].visually-hidden {
 .inner-columns > h3:first-child {
   width: 460px;
   margin-top: 0;
-  margin-right: 460px;
+  /* margin-right: 460px; */
   margin-right: calc(100% - 460px);
 }
 
@@ -1160,7 +1160,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #f8f3f0;
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
